@@ -13,10 +13,22 @@
 #ifndef SCEPAF_H_
 #define SCEPAF_H_
 
+
+
 //temporary
 typedef ScePafRcoID		(void*);
 typedef ScePafTextureID	(void*);
 typedef ScePafTextID	(void*);
+
+
+//"common" functions in scePaf
+#define scePaf_15AFC8D3 snprintf
+#define scePaf_6CEA048C malloc
+#define scePaf_48BB05D5 malloc //(calls scePaf_6CEA048C)
+#define scePaf_7C66F326 malloc //(calls scePaf_6CEA048C)
+#define scePaf_11EFC5FD sprintf
+#define scePaf_CDDCFFB3 wsnprintf //for wchar
+
 
 
 /**
